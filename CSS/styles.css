@@ -11,19 +11,20 @@ html {
 }
 
 body {
+  background-color: #f2ebe3;
   display: flex;
-  justify-content: center;
-  width: 100vw;
-  height: 100vh;
   align-items: center;
+  justify-content: center;
+  height: 100vh;
   margin: 0;
+  width: 100vw;
 }
 
 .container {
-  width: 375px;
   background-color: #fff;
-  box-shadow: 0 0 5px #ccc;
   border-radius: 3rem;
+  box-shadow: 0 0 5px #ccc;
+  width: 375px;
 }
 
 .container .product-preview {
@@ -42,7 +43,7 @@ body {
 
 @media screen and (min-width: 769px) {
   .container {
-    width: 800px;
+    width: 620px;
   }
   .container .product-preview {
     grid-template-columns: repeat(2, 1fr);
@@ -60,59 +61,62 @@ body {
 
 .container .product-preview .product-content p {
   line-height: 1.5;
+  color: #777;
 }
 
 .container .product-preview .product-content > p:first-child {
-  letter-spacing: 5px;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.8rem;
-  margin-top: 0;
+  font-weight: 500;
+  letter-spacing: 5px;
   margin-bottom: 0;
+  margin-top: 0;
   text-transform: uppercase;
 }
 
 .container .product-preview .product-content h2 {
-  font-size: 2.8rem;
   font-family: "Fraunces", serif;
+  font-size: 2.8rem;
   font-weight: 700;
 }
 
 .container .product-preview .product-content h2 + p {
-  color: #777;
-  font-size: 1.8rem;
   font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
   font-weight: 500;
   margin-bottom: 0;
 }
 
 .container .product-preview .product-content p:last-of-type {
+  align-items: center;
   color: var(--main-color);
+  display: flex;
+  font-family: "Fraunces", serif;
   font-size: 3.6rem;
   font-weight: bold;
-  display: flex;
-  align-items: center;
   margin-bottom: 5px;
 }
 
 .container .product-preview .product-content p:last-of-type span {
-  text-decoration: line-through;
   color: #777;
-  font-weight: normal;
   font-size: 2rem;
-  margin-left: 3rem;
+  font-weight: normal;
+  margin-left: 2rem;
+  text-decoration: line-through;
 }
 
 .container .product-preview .product-content button {
-  padding: 2rem;
+  align-items: center;
+  background-color: var(--main-color);
   border-color: transparent;
   border-radius: 2rem;
-  width: 100%;
-  background-color: var(--main-color);
   color: white;
   display: flex;
-  align-items: center;
-  justify-content: center;
   font-size: 2rem;
   font-weight: bold;
+  justify-content: center;
+  padding: 2rem;
+  width: 100%;
 }
 
 .container .product-preview .product-content button:hover {
